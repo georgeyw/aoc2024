@@ -1,3 +1,4 @@
+import numpy as np
 from collections import defaultdict
 
 from utils import read_input_lines
@@ -11,7 +12,8 @@ def count_occurrences(l):
 
 
 if __name__ == "__main__":
-    data = read_input_lines("1a", split=True, ints=True)
+    data = read_input_lines("1", split=True, ints=True)
+    data = np.array(data)
     dict1 = count_occurrences(data[:, 0])
     dict2 = count_occurrences(data[:, 1])
 

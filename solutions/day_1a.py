@@ -1,8 +1,11 @@
+import numpy as np
+
 from utils import read_input_lines
 
 
 if __name__ == "__main__":
-    data = read_input_lines("1a", split=True, ints=True)
+    data = read_input_lines("1", split=True, ints=True)
+    data = np.array(data)
     list1 = data[:, 0]
     list1.sort()
     list2 = data[:, 1]
